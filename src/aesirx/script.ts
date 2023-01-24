@@ -27,7 +27,7 @@ type UrlPart = {
 }
 
 export class AesirX {
-	client: RestClient
+	private client: RestClient
 	private ref: Ref
 	private apiDomain: string
 	private relatedAesirxUrl = '/index.php?option=reditem&webserviceClient=site&webserviceVersion=1.0.0&api=hal'
