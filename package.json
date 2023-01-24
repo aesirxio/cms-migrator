@@ -1,9 +1,11 @@
 {
-  "name": "aesirx_migrator",
+  "name": "aesirx-cms-migrator",
   "version": "1.0.0",
   "description": "Migrate CMS content to AesirX!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "license": "GPL-3.0-only",
+  "author": "AesirX",
   "files": [
     "/dist"
   ],
