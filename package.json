@@ -1,0 +1,30 @@
+{
+  "name": "aesirx_migrator",
+  "version": "1.0.0",
+  "description": "Migrate CMS content to AesirX!",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "publish-lib": "npm run build && npm publish",
+    "publish-beta": "npm run build && npm publish --tag beta",
+    "publish-dryrun": "npm run build && npm publish --dry-run",
+    "dev": "npx ts-node-dev src/script.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-rest-client": "^3.1.1",
+    "tslog": "^4.7.1",
+    "typed-rest-client": "^1.8.9"
+  }
+}
